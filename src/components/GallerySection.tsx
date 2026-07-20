@@ -27,8 +27,8 @@ function PhotoCard({ photoUrl, idx, style, photoDate }: PhotoCardProps) {
 
   // ฟังก์ชันช่วยจัดการตำแหน่งโฟกัสของรูปภาพแต่ละใบ
   const getImagePositionClass = (index: number) => {
-    if (index === 2) return 'object-right'; // 🎯 จุดแก้ไข: เปลี่ยนจาก object-bottom เป็น object-right เพื่อโฟกัสไปที่ฝั่งขวาของภาพตามที่ขอครับ ✨
-    return 'object-center'; // รูปอื่นๆ จะอยู่ตรงกลางปกติ ✨
+    if (index === 2) return 'object-[80%_center]'; // 🎯 จุดแก้ไข: ขยับมุมกล้องจากขวาสุดมาทางซ้ายอีกนิดนึง เพื่อให้โฟกัสใบหน้าหรือจุดสำคัญได้ตรงล็อกพอดีคั้บ ✨
+    return 'object-center'; 
   };
 
   return (
